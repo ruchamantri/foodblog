@@ -24,7 +24,7 @@ SECRET_KEY = 'xtx-+zdzdp@jc-dk#0yb@%t#9nv3csgk+ppzqe#-jx&28c4)2q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ruchamantri.pythonanywhere.com',]
 
 # Application definition
 
