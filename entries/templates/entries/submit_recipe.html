@@ -1,0 +1,41 @@
+{% extends "entries/index.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} Add Recipe
+{% endblock %}
+{% block content %}
+<!-- Page Header -->
+<header class="masthead" style="background-image: url({% static 'img/recipes_submit.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h1>Submit Recipes</h1>
+                    <span class="subheading">Share your Recipes!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="card mb mt-8">
+                <div class="card-header">
+                    Submit Your Recipes
+                </div>
+                <div class="card-body">
+                    <form method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form|crispy }}
+                        <br>
+                        <button type="submit" class="btn btn-primary">Post Recipe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

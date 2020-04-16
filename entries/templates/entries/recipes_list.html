@@ -1,0 +1,44 @@
+{% extends "entries/index.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %} Add Recipe
+{% endblock %}
+{% block content %}
+<!-- Page Header -->
+<header class="masthead" style="background-image: url({% static 'img/recipes.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h1>Recipes</h1>
+                    <span class="subheading">Check our Recipes!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            {% for recipe in recipes_list %}
+            <div class="post-preview">
+                <a href="{% url 'recipe_details' recipe.pk %}">
+                    <h2 class="post-title">
+                        {{ recipe.name }}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{ recipe.method | truncatechars:100 }}
+                    </h3>
+                </a>
+                <p class="post-meta">Posted by
+                    <a href="#">{{ recipe.author}}</a>
+                </p>
+            </div>
+            {% endfor %}
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

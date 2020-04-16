@@ -1,0 +1,44 @@
+{% extends "entries/index.html" %}
+{% load static %}
+
+{% block content %}
+<!-- Page Header -->
+<header class="masthead" style="background-image: url({% static 'img/recipe_details.jpg' %})">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <div class="page-heading">
+                    <h1>Tasty Recipes</h1>
+                    <span class="subheading">Try some delicious recipes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <h2 class="post-title">
+                {{ object.name }}
+            </h2>
+            <p>
+                <img src="{{MEDIA_URL}}{{object.image}}" width="500px" height="500px"
+                     style="border-radius: 0.5rem">
+            </p>
+            <p>
+               Ingredients: <br>{{ object.ingredients }}
+            </p>
+            <p>
+                Procedure: <br>{{ object.method }}
+            </p>
+            </a>
+            <p class="post-meta">Posted by
+                <a href="#">{{ object.author}}</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
