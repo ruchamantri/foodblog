@@ -30,6 +30,7 @@ ALLOWED_HOSTS = ['ruchamantri.pythonanywhere.com',]
 
 INSTALLED_APPS = [
     'entries',
+    'recipes',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
