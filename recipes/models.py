@@ -3,12 +3,12 @@ from django.db import models
 
 # Create your models here.
 class Recipe(models.Model):
-    recipe_name = models.CharField(max_length=50)
+    name = models.CharField(max_length=50)
     ingredients = models.TextField()
     method = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='images/', null=True)
 
     def __str__(self):
-        return self.recipe_name
+        return self.name
 
