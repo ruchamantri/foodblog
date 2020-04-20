@@ -26,8 +26,7 @@
                 <a href="{% url 'recipe_details' recipe.pk %}">
                     <p>
                         <img src="{{MEDIA_URL}}{{recipe.image}}" width="150px" height="150px"
-                             style="float:left; border-radius: 0.5rem">
-                    &nbsp;
+                             style="float:left; border-radius: 0.5rem; padding: 10px">
                     <h2 class="post-title">
                         {{ recipe.name }}
                     </h2>
