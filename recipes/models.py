@@ -10,5 +10,5 @@ class Recipe(models.Model):
     image = models.ImageField(upload_to='images/', null=True)
 
     def __str__(self):
-        return self.recipe_name
+        return self.name
 
