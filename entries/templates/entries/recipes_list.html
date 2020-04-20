@@ -24,7 +24,7 @@
             <div class="post-preview">
                 <a href="{% url 'recipe_details' recipe.pk %}">
                     <h2 class="post-title">
-                        {{ recipe.name }}
+                        {{ recipe.recipe_name }}
                     </h2>
                     <h3 class="post-subtitle">
                         {{ recipe.method | truncatechars:100 }}
