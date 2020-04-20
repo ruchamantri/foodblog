@@ -25,16 +25,18 @@
             <div class="post-preview">
                 <a href="{% url 'recipe_details' recipe.pk %}">
                     <p>
-                        <img src="{{MEDIA_URL}}{{recipe.image}}" width="100px" height="100px"
+                        <img src="{{MEDIA_URL}}{{recipe.image}}" width="150px" height="150px"
                              style="float:left; border-radius: 0.5rem">
-                    </p>
-                    &nbsp;
+
+
                     <h2 class="post-title">
                         {{ recipe.name }}
                     </h2>
+
                     <h3 class="post-subtitle">
                         {{ recipe.method | truncatechars:100 }}
                     </h3>
+                    </p>
                 </a>
                 <p class="post-meta">Posted by
                     <a href="#">{{ recipe.author}}</a>
