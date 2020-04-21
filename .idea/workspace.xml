@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6df6b59-8b8d-42c2-b151-55bbe4238a18" name="Default Changelist" comment="" />
+    <list default="true" id="b6df6b59-8b8d-42c2-b151-55bbe4238a18" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entries/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/entries/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entries/templates/entries/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/entries/templates/entries/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entries/templates/entries/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/entries/templates/entries/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entries/templates/entries/recipes_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/entries/templates/entries/recipes_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entries/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/entries/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +38,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jewellery_project" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -43,8 +50,8 @@
       <recent name="C:\Users\Rucha\Desktop\myblog\entries\templates\entries\" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Rucha\Desktop\foodblog\static\img" />
       <recent name="C:\Users\Rucha\Desktop\foodblog\static" />
+      <recent name="C:\Users\Rucha\Desktop\foodblog\static\img" />
       <recent name="C:\Users\Rucha\Desktop\Blog" />
       <recent name="C:\Users\Rucha\Desktop\Blog\entries" />
       <recent name="C:\Users\Rucha\Desktop\Blog\entries\templates\entries" />
@@ -71,10 +78,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="74" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1585680113986" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1587411826419">
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1587418705322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587411826419" />
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587418705322" />
     <state x="279" y="58" key="SettingsEditor" timestamp="1585681903679">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

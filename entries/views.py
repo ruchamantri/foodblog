@@ -1,7 +1,3 @@
-from pydoc import render_doc
-
-from django.shortcuts import redirect
-from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView
 
 from .models import Entry, Contact
