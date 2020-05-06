@@ -1,7 +1,7 @@
 from django.urls import path
 
 from recipes.views import RecipeEntryView, RecipeListView
-from .views import HomeView, EntryView, AboutMeView, ContactUsView
+from .views import HomeView, EntryView, AboutMeView
 
 urlpatterns = [
     path('', HomeView.as_view(), name = 'blog-home'),
@@ -9,5 +9,4 @@ urlpatterns = [
     path('about/', AboutMeView.as_view(), name = 'about'),
     path('recipes/<int:pk>/', RecipeEntryView.as_view(), name='recipe_details'),
     path('recipes/', RecipeListView.as_view(), name='recipe_list'),
-    path('contact/', ContactUsView.as_view(), name = 'contact_us')
 ]

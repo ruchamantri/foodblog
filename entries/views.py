@@ -1,6 +1,6 @@
 from django.views.generic import ListView, DetailView, CreateView
 
-from .models import Entry, Contact
+from .models import Entry
 
 
 class HomeView(ListView):
@@ -16,8 +16,3 @@ class EntryView(DetailView):
 class AboutMeView(ListView):
     model = Entry
     template_name = 'entries/about.html'
-
-class ContactUsView(CreateView):
-    model = Contact
-    fields = '__all__'
-    template_name = 'entries/contact.html'

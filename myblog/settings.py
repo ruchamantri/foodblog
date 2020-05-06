@@ -24,13 +24,14 @@ SECRET_KEY = 'xtx-+zdzdp@jc-dk#0yb@%t#9nv3csgk+ppzqe#-jx&28c4)2q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ruchamantri.pythonanywhere.com',]
+ALLOWED_HOSTS = ['ruchamantri.pythonanywhere.com', '127.0.0.1']
 
 # Application definition
 
 INSTALLED_APPS = [
     'entries',
     'recipes',
+    'contact',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
